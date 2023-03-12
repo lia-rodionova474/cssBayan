@@ -11,10 +11,61 @@ body {
     font-family: 'Golos Text', sans-serif; 
 }
 
+
 .container {
     max-width: 700px;
     margin: auto;
-    background-color: aliceblue;
-    
-    bor
+    background-color: rgb(174, 201, 224);
 }
+
+
+.accordion {
+    max-width: 700px;
+    margin: auto;
+    background-color: aliceblue;
+   
+}
+
+
+.accor-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.accor-item-input {
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.trigger {
+    display: block;
+    padding: 15px;
+    border: 1px solid rgb(20, 108, 32);
+}
+
+.content {
+    padding: 15px;
+    border: 1px solid rgb(20, 108, 32);
+    border-top: none;
+    display: none;
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+    width: 400px
+}
+
+
+.accor-item-input:checked ~ .content {
+    display: block;
+}
+
+
+
+    
