@@ -15,15 +15,12 @@ body {
 .container {
     max-width: 700px;
     margin: auto;
-    background-color: rgb(174, 201, 224);
 }
 
 
 .accordion {
     max-width: 700px;
-    margin: auto;
-    background-color: aliceblue;
-   
+    margin: auto;   
 }
 
 
@@ -34,8 +31,6 @@ body {
 }
 
 .accor-item-input {
-    /* margin-bottom: 20px;
-    margin-top: 20px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -46,19 +41,28 @@ body {
     display: block;
     padding: 15px;
     border: 1px solid rgb(20, 108, 32);
+    background-color: rgb(179, 215, 193);
+    cursor: pointer; 
+    position: relative;
 }
+
+
 
 .content {
     padding: 15px;
     border: 1px solid rgb(20, 108, 32);
     border-top: none;
     display: none;
+    background-color: rgb(179, 215, 193);
+
 }
 
 .img-center {
     display: block;
     margin: auto;
-    width: 400px
+    width: 400px;
+    border: 10px solid #9eba9e;
+    border-radius: 10%;
 }
 
 
@@ -67,5 +71,12 @@ body {
 }
 
 
+.trigger::after { 
+    content: '+'; 
+    right: 15px;
+    position: absolute;
+}
+:checked + .trigger::after { 
+    content: '−'; 
+}
 
-    
