@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Golos+Text&display=swap')
+;
+
+
+body {
+    background-color:rgb(196, 235, 214);
+    color:  rgb(20, 108, 32);
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Caveat', cursive;
+    font-family: 'Golos Text', sans-serif; 
+}
+
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.accordion {
+    max-width: 700px;
+    margin: auto;   
+}
+
+
+.accor-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.accor-item-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.trigger {
+    display: block;
+    padding: 15px;
+    border: 1px solid rgb(20, 108, 32);
+    background-color: rgb(179, 215, 193);
+    cursor: pointer; 
+    position: relative;
+}
+
+
+
+.content {
+    padding: 15px;
+    border: 1px solid rgb(20, 108, 32);
+    border-top: none;
+    display: none;
+    background-color: rgb(179, 215, 193);
+
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+    width: 400px;
+    border: 10px solid #9eba9e;
+    border-radius: 10%;
+}
+
+
+.accor-item-input:checked ~ .content {
+    display: block;
+}
+
+
+.trigger::after { 
+    content: '+'; 
+    right: 15px;
+    position: absolute;
+}
+:checked + .trigger::after { 
+    content: '−'; 
+}
+
